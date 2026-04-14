@@ -1,0 +1,16 @@
+# Docksmith sample app
+# Uses all 6 instructions: FROM, WORKDIR, ENV, COPY, RUN, CMD
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+ENV APP_NAME=DocksmithApp
+ENV GREETING=Hello
+ENV RUN_MODE=production
+
+COPY app /app
+
+RUN python3 -c "import os; print('Build-time check: APP_NAME=' + os.environ.get('APP_NAME','?'))"
+
+CMD ["python3", "main.py"]

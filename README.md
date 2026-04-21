@@ -1,5 +1,14 @@
 # Docksmith
 
+## Team Members
+
+| Name | USN |
+|------|-----|
+| TARUN S | PES1UG23AM919 |
+| Aditya Venkatesh  | PES1UG23AM024 |
+| Adarsh R Menon | PES1UG23AM016 |
+| Abhay H Bhargav | PES1UG23AM008 |
+
 A simplified Docker-like build and runtime system built from scratch in Go.
 
 Implements:
